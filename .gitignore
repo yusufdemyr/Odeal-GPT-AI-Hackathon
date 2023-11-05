@@ -24,3 +24,5 @@ Chatbot/frontend/*.sln
 Chatbot/frontend/*.sw?
 
 Chatbot/api/env
+Chatbot/api/response_temp_image/*
+Chatbot/api/aktif_user/*
