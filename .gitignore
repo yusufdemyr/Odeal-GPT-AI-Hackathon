@@ -1,0 +1,26 @@
+# Logs
+Chatbot/frontend/logs
+Chatbot/frontend/*.log
+Chatbot/frontend/npm-debug.log*
+Chatbot/frontend/yarn-debug.log*
+Chatbot/frontend/yarn-error.log*
+Chatbot/frontend/pnpm-debug.log*
+Chatbot/frontend/lerna-debug.log*
+
+Chatbot/frontend/node_modules
+Chatbot/frontend/dist
+Chatbot/frontend/dist-ssr
+Chatbot/frontend/*.local
+
+# Editor directories and files
+Chatbot/frontend/.vscode/*
+Chatbot/frontend/!.vscode/extensions.json
+Chatbot/frontend/.idea
+Chatbot/frontend/.DS_Store
+Chatbot/frontend/*.suo
+Chatbot/frontend/*.ntvs*
+Chatbot/frontend/*.njsproj
+Chatbot/frontend/*.sln
+Chatbot/frontend/*.sw?
+
+Chatbot/api/env
