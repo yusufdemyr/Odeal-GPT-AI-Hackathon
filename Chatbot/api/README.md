@@ -10,5 +10,5 @@ You can run "./env/Scripts/activate" code on your terminal for activating enviro
 ### pip install -r requirements.txt
 Install the spesific requirements for running API.
 
-### uvicorn --reload main:app
+### uvicorn main:app --reload
 Starts your API.
