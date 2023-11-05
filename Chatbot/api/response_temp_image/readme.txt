@@ -1,0 +1,1 @@
+Bu klasör geçici olarak çizdirilen grafiklerin kaydedilmesi amacıyla kullanılıyor. Klasör'e kaydedilen fotolar işlem sonrası hemen silinir. Dosyayı silmeyin.

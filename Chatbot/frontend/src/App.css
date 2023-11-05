@@ -1,0 +1,144 @@
+.main{
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+
+/* Header area */
+.header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header img{
+  height: 80px;
+}
+
+/* Input area */
+.chatbot-input-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #def5ff;
+  bottom: 0;
+  width: 100%;
+  min-height: 10%;
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.chatbot-input{
+  background-color: #89cff3;
+  width: 70%;
+  min-height: 40px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media  screen and (max-width: 900px) {
+  .chatbot-input{
+    width: 90%;
+  }
+}
+.chatbot-input textarea{
+  position: relative;
+  width: 90%;
+  height: 20px;
+  border: none;
+  background-color: #89cff3;
+  color:rgb(0, 0, 0);
+  font-size: 14px;
+  resize: none;
+}
+
+.chatbot-input textarea:focus{
+  outline: none;
+  
+}
+textarea::placeholder{
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 14px;
+}
+.chatbot-input-send-icon{
+  cursor:pointer;
+}
+/* Body content */
+.chatbot-conversation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+
+.chatbot-conversation-item.answer{
+  background-color: #00a9ff;
+  width: 80%;
+  overflow: auto;
+}
+.chatbot-conversation-item.question{
+  width: 80%;
+  background-color: #89cff3;
+}
+@media screen and (min-width: 900px) {
+  .chatbot-conversation-item.answer{
+    width: 60%;
+  }
+  .chatbot-conversation-item.question{
+    width: 60%;
+  }
+}
+
+.chatbot-conversation-item{
+  width: 80vh;
+  border-radius: 16px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.chat-img{
+  width: 100%;
+}
+
+/* Login form */
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.login-form-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(86, 99, 247);
+}
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.login-button{
+  background-color: #00a9ff;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor:pointer;
+}
