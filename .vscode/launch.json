@@ -7,7 +7,7 @@
         
         // run config for npm run dev in frontend
         {
-            "name": "npm: run dev",
+            "name": "Frontend Run",
             "type": "node",
             "request": "launch",
             "cwd": "${workspaceFolder}/Chatbot/frontend",
@@ -18,7 +18,7 @@
             ],
         },
         {
-            "name": "Python: FastAPI",
+            "name": "API Run",
             "type": "python",
             "python": "${workspaceFolder}/Chatbot/api/env/Scripts/python.exe",
             "request": "launch",
