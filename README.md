@@ -1,1 +1,1 @@
-# -deal-GPT-AI-Hackathon
+# Odeal-GPT-AI-Hackathon
