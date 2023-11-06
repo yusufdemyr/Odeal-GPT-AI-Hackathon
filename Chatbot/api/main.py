@@ -52,7 +52,7 @@ async def create_session(user_id: str):
     data_path = f"aktif_user/{user_id}.csv"
     SESSION_DATA[session_id] = {
             "gp4_agent": create_csv_agent(
-                 ChatOpenAI(temperature=0, model_name="gpt-4",max_tokens=150),
+                 ChatOpenAI(temperature=0, model_name="gpt-4"),
     data_path, verbose=True)
     }
     return {"session_id": session_id}
@@ -68,10 +68,14 @@ async def create_session(question: Question,session_id: str):
         gp4_agent = get_gp4_agent(session_id)
         prompt = f"""Aşağıdaki üçlü tırnak içerisindeki soruya Türkçe dilinde cevap ver.
 
-        Eğer grafik, resim veya tablo isteniyorsa, matplotlib ile oluşturduğun görseli açmadan yalnızca 'response_temp_image/{question.question_id}.png' uzantısına kaydet.
-        Eğer soruda kampanya,fikir,strateji,öneri,promosyon vb. bir istek var ise bu isteği karşılayacak şekilde örnek ile cevap ver.
-        Cevap için en fazla 100 kelime kullan.
+        Eğer grafik, resim veya tablo isteniyorsa, matplotlib ile oluşturduğun görseli açmadan yalnızca 'response_temp_image/{question.question_id}.png' uzantısına kaydet ve grafikteki herşey türkçe olsun.
 
+        Eğer soruda kampanya,fikir,strateji,öneri,promosyon vb. bir istek var ise bu isteği karşılayacak şekilde verideki bilgiler dahilinde örnek ile cevap ver.
+
+        Eğer soruda üyelik yaşım nedir, ne kadar süredir üyeyim gibi bir soru var ise şuanki tarih - aktivasyon tarihi işlemini yaparak cevap ver.
+     
+        Final Answer her zaman Türkçe dilinde olmalıdır.
+        
         Soru: '''{question.question}'''
         """
         response = gp4_agent.run(prompt)
