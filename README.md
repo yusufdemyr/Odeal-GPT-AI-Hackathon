@@ -59,3 +59,4 @@ Projeyi yerel makinenizde çalıştırmak veya geliştirmek için aşağıdaki a
       ```
 5. Hazırsınız! Müşteri ID'nizi girerek botumuzu kullanmaya başlayabilirsiniz.
 
+**Not**: API anahtarınızı `main.py` dosyasındaki `os.environ["OPENAI_API_KEY"]` satırına eklemeyi unutmayın.
