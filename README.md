@@ -9,6 +9,22 @@ Bu repo, Ödeal GPT AI Hackathon için bbt-ai ekibinin projesini içerir. Ekip �
 
 Bu projenin amacı, Ödeal üye işyerlerinin kullanacağı bir LLM (Large Language Model) tabanlı AI uygulaması geliştirmektir. Bu uygulama, Ödeal müşterilerinin işlem geçmişi ve gelecekteki işlemleriyle ilgili sorular sormalarına ve cevap almalarına yardımcı olacaktır. Ayrıca, müşterilere gelecekteki işlemleri artırmak için öneriler sunacak.
 
+## Uygulamadan Resimler
+
+<img width="800" height="500" src="./src/login.png">
+
+<img width="800" height="500" src="./src/1.png">
+
+<img width="800" height="500" src="./src/2.png">
+
+<img width="800" height="500" src="./src/3.png">
+
+<img width="800" height="500" src="./src/4.png">
+
+### Uygulamanın Mimarisi
+
+<img width="800" height="500" src="./src/mimari.png">
+
 ## Örnek Kullanım
 
 Bu AI chatbot, kullanıcıların işlem geçmişi ile ilgili sorulara doğru cevaplar verecek ve işlem verilerini anlayarak sorulara yanıtlayacaktır. Örnek sorgular ve cevapları şunlar olabilir:
